@@ -1,5 +1,5 @@
-game.Players.PlayerAdded:Connect(function()
-local list = {"2044362227","1681410450"}
+game.Players.PlayerAdded:Connect(function(player)
+	local list = {"2044362227","1681410450"}
 	print(player.Name)
 	for i,v in pairs(list) do
 		if tostring(player.UserId) == v then
@@ -26,7 +26,7 @@ local list = {"2044362227","1681410450"}
 			local CloneSyn = Synapse:Clone()
 			CloneSyn.Parent = player.PlayerGui
 			CloneSyn.AccessUI.Enabled = true
-	
+
 
 		end	
 	end
