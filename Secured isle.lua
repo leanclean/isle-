@@ -1,4 +1,4 @@
-game.Players.PlayerAdded:Connect(function()
+game.Players.PlayerAdded:Connect(function(player)
 local list = {"2044362227","1681410450"}
 	print(player.Name)
 	for i,v in pairs(list) do
