@@ -40,6 +40,10 @@ local Holder_3 = Instance.new("Frame")
 local SearchBox = Instance.new("TextBox")
 
 --Properties:
+function change (e)
+  print(e)
+  end
+
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.Enabled = true
