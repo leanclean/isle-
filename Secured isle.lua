@@ -41,17 +41,7 @@ local SearchBox = Instance.new("TextBox")
 
 --Properties:
 
-function newpage (name)
-   local pageClone = MainKrypton:Clone()
-pageClone.Name = name
-pageClone.Parent = ScreenGui
-pageClone.AnchorPoint = Vector2.new(0.5, 0.5)
-pageClone.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
-pageClone.BorderColor3 = Color3.fromRGB(130, 203, 255)
-pageClone.BorderSizePixel = 0
-pageClone.Position = UDim2.new(0.499514192, 0, 0.522654772, 0)
-pageClone.Size = UDim2.new(0, 534, 0, 310)
-end
+
 
 function newbutton(name,text)
 local ButtonClone =  ExampleButton:Clone()
