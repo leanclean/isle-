@@ -364,13 +364,7 @@ ButtonClone.Font = Enum.Font.Gotham
 ButtonClone.TextColor3 = Color3.fromRGB(255, 255, 255)
 ButtonClone.TextSize = 16.000
 ButtonClone.Text = text
-ButtonClone.MouseButton1Click:Connect(function() 
-  if ScreenGui:FindFirstChild(name) then
-        print('found')
-       
-    end 
 end
-end)
 -- Scripts:
 
 -- ScreenGui.LocalScript is disabled.
