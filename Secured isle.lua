@@ -41,7 +41,30 @@ local SearchBox = Instance.new("TextBox")
 
 --Properties:
 
+function newpage (name)
+   local pageClone = MainKrypton:Clone()
+pageClone.Name = name
+pageClone.Parent = ScreenGui
+pageClone.AnchorPoint = Vector2.new(0.5, 0.5)
+pageClone.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+pageClone.BorderColor3 = Color3.fromRGB(130, 203, 255)
+pageClone.BorderSizePixel = 0
+pageClone.Position = UDim2.new(0.499514192, 0, 0.522654772, 0)
+pageClone.Size = UDim2.new(0, 534, 0, 310)
+end
 
+function newbutton(name,text)
+local ButtonClone =  ExampleButton:Clone()
+ButtonClone.Name = name
+ButtonClone.Parent = Buttons
+ButtonClone.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+ButtonClone.BorderSizePixel = 0
+ButtonClone.Size = UDim2.new(1, 0, 0, 30)
+ButtonClone.Font = Enum.Font.Gotham
+ButtonClone.TextColor3 = Color3.fromRGB(255, 255, 255)
+ButtonClone.TextSize = 16.000
+ButtonClone.Text = text
+end
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.Enabled = true
@@ -341,30 +364,7 @@ SearchBox.PlaceholderText = "Search Bar"
 SearchBox.Text = ""
 SearchBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 SearchBox.TextSize = 14.000
-function newpage (name)
-   local pageClone = MainKrypton:Clone()
-pageClone.Name = name
-pageClone.Parent = ScreenGui
-pageClone.AnchorPoint = Vector2.new(0.5, 0.5)
-pageClone.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
-pageClone.BorderColor3 = Color3.fromRGB(130, 203, 255)
-pageClone.BorderSizePixel = 0
-pageClone.Position = UDim2.new(0.499514192, 0, 0.522654772, 0)
-pageClone.Size = UDim2.new(0, 534, 0, 310)
-end
 
-function newbutton(name,text)
-local ButtonClone =  ExampleButton:Clone()
-ButtonClone.Name = name
-ButtonClone.Parent = Buttons
-ButtonClone.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
-ButtonClone.BorderSizePixel = 0
-ButtonClone.Size = UDim2.new(1, 0, 0, 30)
-ButtonClone.Font = Enum.Font.Gotham
-ButtonClone.TextColor3 = Color3.fromRGB(255, 255, 255)
-ButtonClone.TextSize = 16.000
-ButtonClone.Text = text
-end
 -- Scripts:
 
 -- ScreenGui.LocalScript is disabled.
