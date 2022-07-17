@@ -53,6 +53,21 @@ ButtonClone.TextSize = 16.000
 ButtonClone.Text = text
   end
 
+function valuechanger (script)
+local ValueChanger = Name_2:Clone()
+ValueChanger.Name = "Name"
+ValueChanger.Parent = Value
+ValueChanger.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ValueChanger.BackgroundTransparency = 1.000
+ValueChanger.BorderSizePixel = 0
+ValueChanger.Size = UDim2.new(0, 0, 1, 0)
+ValueChanger.Font = Enum.Font.Gotham
+ValueChanger.Text = "Value Changer"
+ValueChanger.TextColor3 = Color3.fromRGB(255, 255, 255)
+ValueChanger.TextSize = 16.000
+ValueChanger.TextXAlignment = Enum.TextXAlignment.Left
+  end
+
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.Enabled = true
