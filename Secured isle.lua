@@ -40,8 +40,17 @@ local Holder_3 = Instance.new("Frame")
 local SearchBox = Instance.new("TextBox")
 
 --Properties:
-function change (e)
-  print(e)
+function newbutton (text)
+local ButtonClone =  ExampleButton:Clone()
+ButtonClone.Name = "NewButton"
+ButtonClone.Parent = Buttons
+ButtonClone.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+ButtonClone.BorderSizePixel = 0
+ButtonClone.Size = UDim2.new(1, 0, 0, 30)
+ButtonClone.Font = Enum.Font.Gotham
+ButtonClone.TextColor3 = Color3.fromRGB(255, 255, 255)
+ButtonClone.TextSize = 16.000
+ButtonClone.Text = text
   end
 
 
