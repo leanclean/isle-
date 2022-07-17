@@ -40,7 +40,7 @@ local Holder_3 = Instance.new("Frame")
 local SearchBox = Instance.new("TextBox")
 
 --Properties:
-function newpage (name,buttontext)
+function newpage (name)
    local pageClone = MainKrypton:Clone()
 pageClone.Name = name
 pageClone.Parent = ScreenGui
@@ -50,8 +50,10 @@ pageClone.BorderColor3 = Color3.fromRGB(130, 203, 255)
 pageClone.BorderSizePixel = 0
 pageClone.Position = UDim2.new(0.499514192, 0, 0.522654772, 0)
 pageClone.Size = UDim2.new(0, 534, 0, 310)
+end
+function newbutton(name,text)
 local ButtonClone =  ExampleButton:Clone()
-ButtonClone.Name = buttontext
+ButtonClone.Name = name
 ButtonClone.Parent = Buttons
 ButtonClone.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
 ButtonClone.BorderSizePixel = 0
@@ -59,14 +61,14 @@ ButtonClone.Size = UDim2.new(1, 0, 0, 30)
 ButtonClone.Font = Enum.Font.Gotham
 ButtonClone.TextColor3 = Color3.fromRGB(255, 255, 255)
 ButtonClone.TextSize = 16.000
-ButtonClone.Text = buttontext 
-
-
+ButtonClone.Text = text
+ButtonClone.MouseButton1Click:Connect(function() 
+  if ScreenGui:FindFirstChild(name) then
+        print('found')
+       
+    end 
 end
-
-
-
-
+end)
 
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -81,6 +83,7 @@ MainKrypton.BorderColor3 = Color3.fromRGB(130, 203, 255)
 MainKrypton.BorderSizePixel = 0
 MainKrypton.Position = UDim2.new(0.499514192, 0, 0.522654772, 0)
 MainKrypton.Size = UDim2.new(0, 534, 0, 310)
+MainKrypton.Visible = false 
 
 SideScroll.Name = "SideScroll"
 SideScroll.Parent = MainKrypton
