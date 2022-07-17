@@ -40,9 +40,18 @@ local Holder_3 = Instance.new("Frame")
 local SearchBox = Instance.new("TextBox")
 
 --Properties:
-function newbutton (text)
+function newpage (name,buttontext)
+   local pageClone = MainKrypton:Clone()
+pageClone.Name = name
+pageClone.Parent = ScreenGui
+pageClone.AnchorPoint = Vector2.new(0.5, 0.5)
+pageClone.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+pageClone.BorderColor3 = Color3.fromRGB(130, 203, 255)
+pageClone.BorderSizePixel = 0
+pageClone.Position = UDim2.new(0.499514192, 0, 0.522654772, 0)
+pageClone.Size = UDim2.new(0, 534, 0, 310)
 local ButtonClone =  ExampleButton:Clone()
-ButtonClone.Name = "NewButton"
+ButtonClone.Name = buttontext
 ButtonClone.Parent = Buttons
 ButtonClone.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
 ButtonClone.BorderSizePixel = 0
@@ -50,23 +59,14 @@ ButtonClone.Size = UDim2.new(1, 0, 0, 30)
 ButtonClone.Font = Enum.Font.Gotham
 ButtonClone.TextColor3 = Color3.fromRGB(255, 255, 255)
 ButtonClone.TextSize = 16.000
-ButtonClone.Text = text
-  end
+ButtonClone.Text = buttontext 
 
-function valuechanger (script)
-local ValueChanger = Name_2:Clone()
-ValueChanger.Name = "Name"
-ValueChanger.Parent = Value
-ValueChanger.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ValueChanger.BackgroundTransparency = 1.000
-ValueChanger.BorderSizePixel = 0
-ValueChanger.Size = UDim2.new(0, 0, 1, 0)
-ValueChanger.Font = Enum.Font.Gotham
-ValueChanger.Text = "Value Changer"
-ValueChanger.TextColor3 = Color3.fromRGB(255, 255, 255)
-ValueChanger.TextSize = 16.000
-ValueChanger.TextXAlignment = Enum.TextXAlignment.Left
-  end
+
+end
+
+
+
+
 
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
