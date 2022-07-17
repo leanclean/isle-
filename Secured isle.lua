@@ -43,9 +43,9 @@ local SearchBox = Instance.new("TextBox")
 
 
 
-function newbutton(name,text)
+function newbutton(text)
 local ButtonClone =  ExampleButton:Clone()
-ButtonClone.Name = name
+ButtonClone.Name = text
 ButtonClone.Parent = Buttons
 ButtonClone.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
 ButtonClone.BorderSizePixel = 0
