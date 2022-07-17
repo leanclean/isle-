@@ -57,7 +57,7 @@ MainKrypton.BorderColor3 = Color3.fromRGB(130, 203, 255)
 MainKrypton.BorderSizePixel = 0
 MainKrypton.Position = UDim2.new(0.499514192, 0, 0.522654772, 0)
 MainKrypton.Size = UDim2.new(0, 534, 0, 310)
-MainKrypton.Visible = false 
+
 
 SideScroll.Name = "SideScroll"
 SideScroll.Parent = MainKrypton
